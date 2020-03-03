@@ -1,0 +1,17 @@
+{
+  "project_id": "30374",
+  "private_name": "pool from api",
+  "may_contain_adult_content": false,
+  "will_expire": "2020-09-01T13:00",
+  "mixer_config":{
+      "real_tasks_count": 5,
+      "golden_tasks_count": 0,
+      "training_tasks_count": 0
+   },
+  "reward_per_assignment": 0.02,
+  "assignment_max_duration_seconds": 300,
+  "defaults" : {
+         "default_overlap_for_new_task_suites" : 3,
+         "default_overlap_for_new_tasks": 3
+  }
+}
