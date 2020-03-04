@@ -27,8 +27,8 @@ def create_task():
     return request.json()
 
 
-def get_pool_results():
-    request = requests.get(f"{HOST}/api/v1/assignments", headers=HEADER)
+def get_pool_results(pool_id=317185):
+    request = requests.get(f"{HOST}/api/v1/assignments?pool_id={pool_id}", headers=HEADER)
     request.raise_for_status()
     return request.json()
 
@@ -40,4 +40,5 @@ def get_pool_list():
 
 
 if __name__ == "__main__":
+    # print_pretty_json(get_pool_list())
     pass
